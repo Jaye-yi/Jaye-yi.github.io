@@ -22,9 +22,9 @@
                 <p class="name" style="text-align: center;">
                   Yina Jian
                 </p>
-                <p>I am a non-degree option student taking graduate-level credits at Stanford University, mainly in Automation Theory and Artificial Intelligence. Before studying at Stanford, I was an MSCS student at Columbia University in the Computer Vision and Robotics track, for which I graduated in May 2023, and I worked as a Full-Stack Software Engineer focusing on Oracle Cloud Infrastructure (OCI) and File Storage System, at Oracle Corporation in the Bay Area for a year.
+                <p>I am a researcher and entrepreneur focused on robot learning and embodied AI. I completed graduate coursework at Stanford University (4.12 GPA) in robot learning and computer vision, studying under Professors Chelsea Finn and Fei-Fei Li. Before Stanford, I earned my M.S. in Computer Science from Columbia University (Computer Vision and Robotics track, 2023) and worked as a Software Engineer at Oracle.
                 </p>
-                <p>I am actively seeking research project opportunities and internships in Embodied AI, Robotics, and LLM. Please feel free to email me for possible collaborations.
+                <p>I have published 4 papers including IEEE RAL (48 citations, IROS 2025 Oral) and Neurocomputing, with 2 more under review at CVPR and TCSVT. I am the founder of <a href="https://elucigate.com" style="color: #2874A6;">Elucigate</a>, an AI startup. I am currently applying to PhD programs in robotics and embodied AI. Feel free to reach out for collaborations.
                 </p>
                 <p style="text-align:center">
                   <a href="/cdn-cgi/l/email-protection#91e8fba3a6a0a2d1f2fefde4fcf3f8f0bff4f5e4">Email</a> &nbsp;/&nbsp;
@@ -47,19 +47,51 @@
                 <div style="background: linear-gradient(135deg, #FEF9E7 0%, #E8F8F5 100%); border-radius: 16px; padding: 24px; margin-bottom: 16px; border: 1px solid #F7DC6F;">
                   <div style="display: flex; align-items: center; margin-bottom: 12px;">
                     <img src="images/elucigate_icon_512.png" style="width: 36px; height: 36px; margin-right: 12px; border-radius: 8px;">
-                    <h2 style="margin: 0; color: #2C3E50;">Founder & CEO — Elucigate</h2>
+                    <h2 style="margin: 0; color: #2C3E50;">Founder — Elucigate</h2>
                   </div>
                   <p style="margin: 0 0 12px 0; color: #2C3E50; font-size: 15px;">
                     <b>Turn complexity into clarity.</b> I'm building an AI startup that makes technology feel light, smooth, and refreshing — like a glass of lemonade on a hot day.
                   </p>
                   <p style="margin: 0 0 12px 0; color: #566573; font-size: 14px;">
-                    When life gives you lemons, make lemonade. Elucigate transforms complex problems into clear, simple solutions through AI — following the playbook of brand-first, user-loved products.
+                    When life gives you lemons, make lemonade. Elucigate transforms complex problems into clear, simple solutions through AI — following the Duolingo playbook of brand-first, user-loved products.
                   </p>
                   <p style="margin: 0;">
                     <a href="https://elucigate.com" style="color: #2874A6; font-weight: bold;">elucigate.com</a>
-                    <!-- <span style="color: #AAB7B8; margin-left: 8px; font-size: 13px;">(Coming Soon)</span> -->
                   </p>
                 </div>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- Research Vision Section -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research Vision</h2>
+                <p style="font-size: 16px; line-height: 1.7; margin-bottom: 16px;">
+                  <b>I want to build robots that help people in their homes</b> — not as distant research prototypes, but as working systems that improve how people live.
+                </p>
+                
+                <h3 style="color: #2874A6; margin-top: 20px;">Data-Efficient Robot Learning Through Compositional Reuse</h3>
+                <p style="line-height: 1.6;">
+                  The central challenge in robot learning is <b>data</b>. Collecting manipulation demonstrations is expensive, time-consuming, and does not scale. My research vision is to design systems that maximize the value of existing data — reusing imitation learning datasets across tasks, transferring skills across robot platforms, and composing simple skills into complex behaviors.
+                </p>
+                
+                <p style="line-height: 1.6;">
+                  <b>The core insight:</b> Complex manipulation tasks can be decomposed into sequences of simpler, common subtasks. Opening a door involves reaching, grasping, rotating, and pulling — each a skill that appears across many tasks. If we can learn robust representations of these primitive skills from existing datasets, we can recombine them to solve novel complex tasks without collecting new demonstrations for each one.
+                </p>
+
+                <h3 style="color: #2874A6; margin-top: 20px;">Key Research Directions</h3>
+                <ul style="line-height: 1.8;">
+                  <li><b>Foundation Models as Compositional Glue:</b> LLMs and VLMs serve as high-level planners that decompose task descriptions into subtask sequences, selecting and ordering primitive skills from a learned library. Grounding these plans in physical reality requires multimodal signals: visual feedback, tactile sensing, and audio cues.</li>
+                  <li><b>Automating Data Collection:</b> What if robots could generate their own training data? By having robots autonomously demonstrate primitive tasks, we can bootstrap a data flywheel. Diffusion models can refine and correct composed sequences, smoothing transitions and fixing accumulated errors.</li>
+                  <li><b>Cross-Platform Transfer:</b> If skills are represented in language-grounded abstractions rather than raw joint trajectories, they can be decoded into different embodiments — enabling a library of primitive skills plus compositional planning to yield combinatorial generalization.</li>
+                </ul>
+
+                <h3 style="color: #2874A6; margin-top: 20px;">Research Philosophy</h3>
+                <p style="line-height: 1.6;">
+                  I design <b>complete systems that solve concrete problems</b>, bridging the gap between algorithmic innovation and real-world deployment. My unconventional path — transitioning from Digital Media to CS in 2020, teaching myself robotics while working full-time, publishing four papers without a formal lab — shaped this philosophy: I hold the tools in my own hands rather than rely on others to realize my visions.
+                </p>
               </td>
             </tr>
           </tbody></table>
@@ -67,9 +99,9 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2>Research Experience</h2>
                 <p>
-                  I'm interested in robotics, computer vision, deep learning, generative AI, and image processing. I am particularly interested in data-driving models like imitation learning for long-horizontal manipulations and multi-perception, such as using tactile, vision, audio, and language to achieve robust and effective manipulations with generality. My goal is to design novel frameworks to enable Embodied AI for diverse tasks in complex indoor environments. Some projects and papers are <span class="highlight">highlighted</span>.
+                  My research spans robot perception, learning-based control, and multimodal integration. I am particularly interested in imitation learning for manipulation and multi-perception systems using tactile, vision, audio, and language to achieve robust manipulation with generality. Some projects and papers are <span class="highlight">highlighted</span>.
                 </p>
 
                 <h2>Papers<h2>
