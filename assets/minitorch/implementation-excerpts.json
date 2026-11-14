@@ -1,0 +1,26 @@
+[
+  {
+    "id": "indexing",
+    "file": "minitorch/tensor_data.py",
+    "start": 17,
+    "end": 34,
+    "code": "def index_to_position(index, strides):\n    position = 0\n    for ind, strides in zip(index, strides):\n        position += ind * strides\n    return position",
+    "note": "Implementation excerpt; docstring and task comments omitted."
+  },
+  {
+    "id": "cuda-map",
+    "file": "minitorch/cuda_ops.py",
+    "start": 43,
+    "end": 54,
+    "code": "def _map(out, out_shape, out_strides, out_size, in_storage, in_shape, in_strides):\n    out_index = cuda.local.array(MAX_DIMS, numba.int32)\n    in_index = cuda.local.array(MAX_DIMS, numba.int32)\n    i = cuda.blockIdx.x * cuda.blockDim.x + cuda.threadIdx.x\n    if i < out_size:\n        count(i, out_shape, out_index)\n        broadcast_index(out_index, out_shape, in_shape, in_index)\n        o = index_to_position(out_index, out_strides)\n        j = index_to_position(in_index, in_strides)\n        out[o] = fn(in_storage[j])",
+    "note": "Implementation excerpt; task comments omitted."
+  },
+  {
+    "id": "backprop",
+    "file": "minitorch/autodiff.py",
+    "start": 199,
+    "end": 220,
+    "code": "def backpropagate(final_variable_with_deriv):\n    queue = [final_variable_with_deriv]\n    while queue:\n        cur = queue[0]\n        var = cur.variable\n        queue = queue[1:]\n        if is_leaf(var):\n            cur.variable._add_deriv(cur.deriv)\n        else:\n            for prev in var.history.backprop_step(cur.deriv):\n                queue.append(prev)",
+    "note": "Implementation excerpt; docstring and task comments omitted."
+  }
+]

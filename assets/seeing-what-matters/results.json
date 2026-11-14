@@ -1,0 +1,151 @@
+{
+  "source": "arXiv:2611.09794v1",
+  "description": "Values transcribed for the project page; protocols retain separate observation contracts.",
+  "protocols": [
+    {
+      "id": "closed-loop",
+      "label": "Closed-loop",
+      "eyebrow": "C.1 · Sequential acquisition",
+      "title": "Acquire evidence that makes a shared skill executable",
+      "contract": "Select views sequentially under an initial budget H = 5. Every method uses the same candidate set, scripted skills, and hidden postcondition evaluator.",
+      "source": "Table 1 · primary coffee workstation experiment",
+      "sample": "500 frozen coffee cases; 3 inference repeats per case, giving 1,500 episodes per method at this setting.",
+      "takeaway": "The ledger alone is insufficient. Scoring views by missing command-relevant evidence raises success from 12.4% for Target ledger to 97.9% for View Belief Map; optional repair brings the primary result to 98.8%.",
+      "rows": [
+        {
+          "label": "Random",
+          "value": 11.1
+        },
+        {
+          "label": "History active",
+          "value": 52.9
+        },
+        {
+          "label": "Target ledger",
+          "value": 12.4
+        },
+        {
+          "label": "View Belief Map",
+          "value": 97.9,
+          "reference": true
+        },
+        {
+          "label": "VBM + local repair",
+          "value": 98.8,
+          "reference": true
+        }
+      ]
+    },
+    {
+      "id": "functional-ood",
+      "label": "Same-object OOD",
+      "eyebrow": "C.2 · Command shift",
+      "title": "Follow the command when object identity stays the same",
+      "contract": "Keep object identity fixed while changing the required function. The primary initial observation budget is H = 3.",
+      "source": "Table 1 · same-object functional-OOD experiment",
+      "sample": "500 frozen coffee cases; 3 inference repeats per case, giving 1,500 episodes per method at this setting.",
+      "takeaway": "Seeing a plausible object part does not establish that it is the right part for this command. The command-bound reference reaches 98.9%, while command-agnostic affordance selection reaches 19.7%.",
+      "rows": [
+        {
+          "label": "Random",
+          "value": 4.7
+        },
+        {
+          "label": "Category shortcut",
+          "value": 3.7
+        },
+        {
+          "label": "Command-agnostic affordance",
+          "value": 19.7
+        },
+        {
+          "label": "View Belief Map",
+          "value": 98.8,
+          "reference": true
+        },
+        {
+          "label": "VBM + local repair",
+          "value": 98.9,
+          "reference": true
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "label": "VLM ranking",
+      "eyebrow": "Separate full-preview stress test",
+      "title": "Can a VLM select useful evidence after seeing every candidate?",
+      "contract": "Each model previews all 12 RGB candidates and returns exactly 3 unique ranked view IDs. This differs from the sequential acquisition protocol.",
+      "source": "Tables 8–9 · strict-clean VLM ranking results",
+      "sample": "1,500 complete evaluator records per model. All seven models pass the archived output-format, candidate-membership, provenance, and no-fallback admission gate.",
+      "takeaway": "Overall success ranges from 26.0% to 42.9%. Task-level results show that several models do well on visually salient Tamp or Place cases while struggling on Insert, Serve, or Grind.",
+      "rows": [
+        {
+          "label": "Gemma 3 27B",
+          "value": 32.5,
+          "interval": 2.4
+        },
+        {
+          "label": "Grok 4.3",
+          "value": 42.9,
+          "interval": 2.5
+        },
+        {
+          "label": "Grok 4.6",
+          "value": 42.5,
+          "interval": 2.5
+        },
+        {
+          "label": "Llama 4 Maverick",
+          "value": 28.3,
+          "interval": 2.3
+        },
+        {
+          "label": "Amazon Nova Pro",
+          "value": 40.3,
+          "interval": 2.5
+        },
+        {
+          "label": "Qwen3-VL-8B",
+          "value": 39.4,
+          "interval": 2.5
+        },
+        {
+          "label": "Sonar Pro",
+          "value": 26,
+          "interval": 2.2
+        }
+      ]
+    }
+  ],
+  "ablations": [
+    [
+      "Full reference",
+      98.9
+    ],
+    [
+      "Without command binding",
+      19.7
+    ],
+    [
+      "Without functional fields",
+      0
+    ],
+    [
+      "Without target conditioning",
+      3.5
+    ]
+  ],
+  "rgbControls": [
+    {
+      "protocol": "C.1 · H = 5",
+      "predicted": 98.5,
+      "shuffled": 14.9
+    },
+    {
+      "protocol": "C.2 · H = 3",
+      "predicted": 98.9,
+      "shuffled": 11.4
+    }
+  ]
+}

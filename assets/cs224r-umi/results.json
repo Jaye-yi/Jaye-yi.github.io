@@ -1,0 +1,70 @@
+{
+  "source": "CS224R 2025 custom-project report",
+  "preferences": {
+    "total": 447,
+    "preferred": 174,
+    "nonPreferred": 273,
+    "comparisonPerCondition": 50,
+    "rows": [
+      {
+        "method": "Unsteered generation",
+        "preferred": 0.122,
+        "nonPreferred": 0.11,
+        "reward": 0.028
+      },
+      {
+        "method": "Feature-guided generation",
+        "preferred": 0.182,
+        "nonPreferred": 0.147,
+        "reward": 0.047
+      }
+    ]
+  },
+  "demonstrations": [
+    {
+      "task": "Full coffee-and-cleanup sequence",
+      "count": 119,
+      "duration": "More than 40 s"
+    },
+    {
+      "task": "Pour coffee",
+      "count": 107,
+      "duration": "About 10 s"
+    },
+    {
+      "task": "Clean cup",
+      "count": 97,
+      "duration": "About 17 s"
+    }
+  ],
+  "training": {
+    "videosPerRun": 7,
+    "epochs": 2,
+    "source": "Course report, Table 3 and Section 5.1",
+    "rows": [
+      {
+        "task": "Full sequence",
+        "time": "16 h 57 m 05 s",
+        "seconds": 61025,
+        "globalSteps": 500
+      },
+      {
+        "task": "Pour coffee",
+        "time": "1 h 40 m 17 s",
+        "seconds": 6017,
+        "globalSteps": 50
+      },
+      {
+        "task": "Clean cup",
+        "time": "45 m 53 s",
+        "seconds": 2753,
+        "globalSteps": 147
+      }
+    ]
+  },
+  "notes": [
+    "The report compares seven videos per run for two epochs.",
+    "Recorded trajectories and early training are separate from future complete real-arm execution.",
+    "Tables supply the exact score and timing values used on the page."
+  ]
+}

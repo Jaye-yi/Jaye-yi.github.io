@@ -1,0 +1,36 @@
+{
+  "source": "Untitled.ipynb, cells 0\u20138",
+  "description": "Recorded matrix-multiplication result for a sliding-window convolution example, first batch.",
+  "rows": [
+    [
+      859,
+      994,
+      1129,
+      1264,
+      1399,
+      1534,
+      1043,
+      531
+    ],
+    [
+      1075,
+      1246,
+      1417,
+      1588,
+      1759,
+      1930,
+      1319,
+      675
+    ],
+    [
+      1291,
+      1498,
+      1705,
+      1912,
+      2119,
+      2326,
+      1595,
+      819
+    ]
+  ]
+}

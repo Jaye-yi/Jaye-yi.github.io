@@ -1,0 +1,149 @@
+{
+  "responses": 58,
+  "period": [
+    "2023-04-24",
+    "2023-04-30"
+  ],
+  "question": "Please rank the features below based on their importance in your learning experience.",
+  "instruction": "Equal ranks were allowed.",
+  "features": [
+    {
+      "feature": "Feedback about poses after a ride",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 21,
+        "rank 2": 15,
+        "rank 3": 7,
+        "rank 4": 7,
+        "rank 5": 1,
+        "rank 6": 2,
+        "rank 7": 2,
+        "rank 9": 3
+      }
+    },
+    {
+      "feature": "Performance Record of each ride",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 19,
+        "rank 2": 9,
+        "rank 3": 11,
+        "rank 4": 10,
+        "rank 5": 4,
+        "rank 6": 1,
+        "rank 7": 1,
+        "rank 8": 3
+      }
+    },
+    {
+      "feature": "Analysis Improvements between practices",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 7,
+        "rank 2": 11,
+        "rank 3": 17,
+        "rank 4": 8,
+        "rank 5": 7,
+        "rank 6": 5,
+        "rank 7": 1,
+        "rank 8": 1,
+        "rank 9": 1
+      }
+    },
+    {
+      "feature": "Suggest personal practice workload",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 3,
+        "rank 2": 5,
+        "rank 3": 5,
+        "rank 4": 8,
+        "rank 5": 11,
+        "rank 6": 9,
+        "rank 7": 7,
+        "rank 8": 4,
+        "rank 9": 6
+      }
+    },
+    {
+      "feature": "Share experience with related community",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 6,
+        "rank 2": 14,
+        "rank 3": 8,
+        "rank 4": 5,
+        "rank 5": 10,
+        "rank 6": 6,
+        "rank 7": 4,
+        "rank 8": 2,
+        "rank 9": 3
+      }
+    },
+    {
+      "feature": "AI model to track progress and suggest what to practice next",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 3,
+        "rank 2": 7,
+        "rank 3": 14,
+        "rank 4": 12,
+        "rank 5": 8,
+        "rank 6": 6,
+        "rank 7": 6,
+        "rank 8": 2
+      }
+    },
+    {
+      "feature": "A clear text guide or 3d body poses for an action",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 16,
+        "rank 2": 13,
+        "rank 3": 4,
+        "rank 4": 10,
+        "rank 5": 3,
+        "rank 6": 4,
+        "rank 7": 6,
+        "rank 8": 1,
+        "rank 9": 1
+      }
+    },
+    {
+      "feature": "Divided action to sub-steps",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 17,
+        "rank 2": 15,
+        "rank 3": 11,
+        "rank 4": 6,
+        "rank 5": 4,
+        "rank 7": 2,
+        "rank 8": 1,
+        "rank 9": 2
+      }
+    },
+    {
+      "feature": "Immediate suggestions to improve after practicing an action",
+      "responses": 58,
+      "rank_counts": {
+        "rank 1": 23,
+        "rank 2": 8,
+        "rank 3": 8,
+        "rank 4": 4,
+        "rank 5": 4,
+        "rank 6": 4,
+        "rank 7": 2,
+        "rank 8": 3,
+        "rank 9": 2
+      }
+    }
+  ],
+  "optional_questions": [
+    "Other features you think are important but not listed here. What's their importance rank?",
+    "Any suggestions or things you want to tell us?"
+  ],
+  "optional_responses": 0,
+  "count_unit": "responses",
+  "source": "Archived snowboard learning experience survey, April 2023; presentation p. 14."
+}

@@ -1,0 +1,298 @@
+{
+  "source": "https://www.mdpi.com/2073-8994/18/3/394",
+  "doi": "https://doi.org/10.3390/sym18030394",
+  "note": "Transcribed from published Tables 2–4 and 8. Physical values follow Table 3.",
+  "simulation": {
+    "source": "Table 2",
+    "columns": [
+      "Spatial",
+      "Object",
+      "Goal",
+      "Long",
+      "Reported overall"
+    ],
+    "rows": [
+      {
+        "method": "Diffusion Policy",
+        "values": [
+          65.2,
+          60.1,
+          58.7,
+          52.3,
+          59.1
+        ]
+      },
+      {
+        "method": "Octo",
+        "values": [
+          68.9,
+          64.3,
+          62.5,
+          56.8,
+          63.1
+        ]
+      },
+      {
+        "method": "DiT Policy",
+        "values": [
+          70.5,
+          66.7,
+          65.2,
+          59.4,
+          65.5
+        ]
+      },
+      {
+        "method": "OpenVLA",
+        "values": [
+          72.1,
+          68.5,
+          67.8,
+          61.9,
+          67.6
+        ]
+      },
+      {
+        "method": "OpenVLA-OFT",
+        "values": [
+          73.8,
+          70.2,
+          69.5,
+          63.4,
+          69.2
+        ]
+      },
+      {
+        "method": "EverydayVLA",
+        "values": [
+          74.4,
+          67.5,
+          64.3,
+          54.7,
+          65.2
+        ]
+      },
+      {
+        "method": "PI-VLA",
+        "values": [
+          79.5,
+          73.4,
+          73.3,
+          66.6,
+          73.2
+        ]
+      }
+    ]
+  },
+  "physical": {
+    "source": "Table 3",
+    "objects": [
+      "Block",
+      "Ball",
+      "Rock"
+    ],
+    "instructions": [
+      "Away",
+      "Left",
+      "Right"
+    ],
+    "rows": [
+      {
+        "method": "OpenVLA",
+        "overall": 61.7,
+        "values": [
+          [
+            80,
+            45,
+            50
+          ],
+          [
+            75,
+            60,
+            70
+          ],
+          [
+            70,
+            50,
+            55
+          ]
+        ]
+      },
+      {
+        "method": "OpenVLA-OFT",
+        "overall": 70,
+        "values": [
+          [
+            85,
+            60,
+            65
+          ],
+          [
+            80,
+            65,
+            75
+          ],
+          [
+            75,
+            60,
+            65
+          ]
+        ]
+      },
+      {
+        "method": "EverydayVLA",
+        "overall": 82.2,
+        "values": [
+          [
+            90,
+            80,
+            75
+          ],
+          [
+            90,
+            85,
+            80
+          ],
+          [
+            85,
+            80,
+            75
+          ]
+        ]
+      },
+      {
+        "method": "PI-VLA",
+        "overall": 88.3,
+        "values": [
+          [
+            95,
+            90,
+            85
+          ],
+          [
+            95,
+            90,
+            85
+          ],
+          [
+            90,
+            85,
+            80
+          ]
+        ]
+      }
+    ]
+  },
+  "generalization": {
+    "source": "Table 4",
+    "columns": [
+      "Unseen tasks",
+      "Unseen environments",
+      "Static distractions",
+      "Dynamic distractions"
+    ],
+    "rows": [
+      {
+        "method": "OpenVLA",
+        "values": [
+          55.2,
+          58.7,
+          50.1,
+          45.3
+        ]
+      },
+      {
+        "method": "OpenVLA-OFT",
+        "values": [
+          60.5,
+          63.4,
+          55.8,
+          50.2
+        ]
+      },
+      {
+        "method": "EverydayVLA",
+        "values": [
+          65.8,
+          68.9,
+          64.2,
+          63.5
+        ]
+      },
+      {
+        "method": "PI-VLA",
+        "values": [
+          72.4,
+          75.1,
+          71.8,
+          70.1
+        ]
+      }
+    ]
+  },
+  "ablations": {
+    "source": "Table 8",
+    "columns": [
+      "Spatial",
+      "Object",
+      "Goal",
+      "Long"
+    ],
+    "rows": [
+      {
+        "method": "PI-VLA · full",
+        "values": [
+          79.5,
+          73.4,
+          73.3,
+          66.6
+        ]
+      },
+      {
+        "method": "Discrete head only",
+        "values": [
+          75.3,
+          69.8,
+          69.1,
+          62.4
+        ]
+      },
+      {
+        "method": "Continuous head only",
+        "values": [
+          73.9,
+          68.2,
+          67.5,
+          60.8
+        ]
+      },
+      {
+        "method": "Without state prediction loss",
+        "values": [
+          76.8,
+          71,
+          70.2,
+          63.5
+        ]
+      },
+      {
+        "method": "Without reinforcement loss",
+        "values": [
+          78.2,
+          72.1,
+          71.8,
+          64.9
+        ]
+      },
+      {
+        "method": "Without AURD",
+        "values": [
+          74.1,
+          68.5,
+          68,
+          61.2
+        ]
+      }
+    ]
+  }
+}
