@@ -1,0 +1,150 @@
+/* Homepage publication presentation only. Keep source media and copy intact. */
+.page-shell #research > .publication {
+  grid-template-columns: clamp(200px, 28%, 280px) minmax(0, 1fr);
+  column-gap: 28px;
+  align-items: center;
+  padding: 22px 0 24px;
+}
+
+.page-shell #research > .publication + .publication {
+  border-top: 1px solid #e8e3df;
+}
+
+.page-shell #research > .publication > .research-visual {
+  width: 100%;
+  min-width: 0;
+  align-self: center;
+  background: transparent;
+}
+
+/* Diagrams and panoramic demonstration strips retain their full composition. */
+.page-shell #research > .publication .research-visual > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 210px;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.page-shell #research > .publication .research-visual > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+}
+
+/* Match the animation canvas to its actual artwork instead of adding a matte. */
+.page-shell #research > .publication .research-visual .motion-preview {
+  display: block;
+  height: auto;
+  aspect-ratio: 760 / 400;
+  background: transparent;
+}
+
+.page-shell #research > .publication .motion-preview .motion-poster,
+.page-shell #research > .publication .motion-preview .motion-overlay {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.page-shell #research > .publication .research-visual .motion-video {
+  aspect-ratio: 4 / 3;
+}
+
+.page-shell #research > .publication .motion-badge {
+  right: 6px;
+  bottom: 6px;
+  padding: 4px 6px;
+  font-size: 9px;
+}
+
+.page-shell #research > .publication .pub-copy {
+  min-width: 0;
+}
+
+.page-shell #research > .publication .venue {
+  color: #746b66;
+  font: 500 .7rem / 1.45 var(--sans);
+  letter-spacing: .055em;
+}
+
+.page-shell #research > .publication .pub-copy h3 {
+  margin: 5px 0 6px;
+  font-size: 1.26rem;
+  line-height: 1.22;
+  letter-spacing: -.018em;
+  text-wrap: pretty;
+}
+
+.page-shell #research > .publication .research-subtitle {
+  margin-top: 0 !important;
+  font-size: .91rem;
+  line-height: 1.4;
+}
+
+.page-shell #research > .publication .tldr {
+  margin-top: 9px !important;
+  font-size: .94rem;
+  line-height: 1.45;
+  font-style: normal;
+}
+
+.page-shell #research > .publication .result {
+  margin-top: 7px !important;
+  color: #6d6560;
+  font-size: .77rem;
+  line-height: 1.45;
+}
+
+.page-shell #research > .publication .my-role {
+  margin-top: 8px !important;
+  color: #786f6a;
+  font-size: .73rem;
+  line-height: 1.45;
+}
+
+.page-shell #research > .publication .paper-links {
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 9px !important;
+  color: var(--rose-dark);
+  font-size: .77rem;
+  line-height: 1.5;
+}
+
+.page-shell #research > .publication .paper-links a {
+  padding: 2px 0;
+}
+
+@media (max-width: 760px) {
+  .page-shell #research > .publication {
+    column-gap: 22px;
+    padding: 20px 0 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell #research > .publication {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+    padding: 23px 0 25px;
+  }
+
+  .page-shell #research > .publication > .research-visual {
+    width: min(100%, 320px);
+    margin-inline: auto;
+  }
+
+  .page-shell #research > .publication .research-visual > img {
+    max-height: 230px;
+  }
+
+  .page-shell #research > .publication .pub-copy h3 {
+    font-size: 1.22rem;
+  }
+}
