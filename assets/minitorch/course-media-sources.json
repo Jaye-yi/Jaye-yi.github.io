@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "file": "course-networkcnn.png",
+      "source": "https://minitorch.github.io/figs/Conv/networkcnn.png",
+      "page": "https://minitorch.github.io/",
+      "credit": "MiniTorch course materials \u00b7 Sasha Rush and contributors"
+    },
+    {
+      "file": "course-streamlit.png",
+      "source": "https://minitorch.github.io/misc/streamlit.png",
+      "page": "https://minitorch.github.io/module0/visualization/",
+      "credit": "Official course visualization; not a personal training log"
+    }
+  ]
+}

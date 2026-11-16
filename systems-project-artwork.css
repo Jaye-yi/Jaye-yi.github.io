@@ -86,3 +86,28 @@
   letter-spacing: .02em;
   white-space: nowrap;
 }
+
+/* The Microvast scene is a concept rendering; no proprietary mechanism is depicted. */
+.page-shell #systems [data-system-artwork="microvast"] .systems-diagram { border-radius: 6px; }
+.page-shell #systems .systems-render-label {
+ position: absolute; right: 4px; bottom: 4px; padding: 3px 5px;
+ border-radius: 3px; background: #fffffff0; color: #625950;
+ font: 500 8px/1.25 var(--sans);
+}
+.page-shell #systems .card-patent-note {
+ margin: 8px 0; color: var(--muted); font: italic .69rem/1.4 var(--serif);
+}
+
+/* Official course interface inset; kept distinct from personal experiment results. */
+.page-shell #systems .systems-course-inset {
+ position:absolute; right:0; bottom:2%; width:34%; height:31%;
+ overflow:hidden; border:1px solid #dbe3e9; border-radius:5px;
+ background:#fff; box-shadow:0 1px 5px rgb(40 55 70 / .06);
+}
+.page-shell #systems .systems-course-inset > img {
+ display:block; width:100%; height:100%; object-fit:contain; padding-bottom:10px;
+}
+.page-shell #systems .systems-course-inset > span {
+ position:absolute; bottom:1px; right:2px; left:2px; text-align:center;
+ background:#fffffff5; color:#625950; font:500 6px/1.2 var(--sans);
+}
