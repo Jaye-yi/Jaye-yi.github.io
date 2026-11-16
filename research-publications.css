@@ -255,3 +255,25 @@
     font-size: 1.22rem;
   }
 }
+
+/* Author lists preserve publication order; highlight only Yina Jian. */
+.page-shell #research .research-authors {
+ margin: 6px 0 8px; color: #96929a;
+ font-family: var(--serif); font-size: .79rem; line-height: 1.65;
+ font-style: normal; overflow-wrap: anywhere;
+}
+.page-shell #research .research-author { display: inline; }
+.page-shell #research .author-separator { color: #aaa3a5; }
+.page-shell #research .author-self {
+ padding: .04em .17em .08em; background: #efd8d1; color: var(--ink);
+ -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.page-shell #research .author-self strong { font-weight: 700; }
+.page-shell #research .research-authors sup { font-size: .72em; margin-left: .06em; }
+.page-shell #research .research-author-note {
+ margin: -4px 0 8px; color: #999197; font: .63rem/1.35 var(--sans);
+}
+.page-shell #research .author-credit-label { color: #847b80; font-size: .9em; }
+.page-shell #research .research-expansion .research-authors {
+ font-size: .69rem; line-height: 1.6;
+}
