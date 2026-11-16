@@ -69,7 +69,15 @@
 
 /* Source architecture at rest, existing conceptual animation on hover/focus. */
 .page-shell #research > .publication [data-method-preview="pi-vla"] .motion-preview {
-  aspect-ratio: 3099 / 1790;
+  aspect-ratio: 6000 / 1641;
+  overflow: visible;
+  margin-bottom: 18px;
+}
+.page-shell #research > .publication [data-method-preview="pi-vla"] .motion-badge {
+  top: calc(100% + 4px);
+  bottom: auto;
+  right: 0;
+  padding: 2px 4px;
 }
 .page-shell #research > .publication [data-method-preview="pi-vla"] .publication-method-poster {
   transition: opacity 180ms ease;
