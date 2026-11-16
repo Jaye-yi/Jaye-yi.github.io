@@ -75,3 +75,10 @@
 @media(prefers-reduced-motion:reduce) {
  .jazz-menu svg { transition:none; }
 }
+
+/* Match the homepage author highlight without changing caption typography. */
+.about-coffee-caption .lab-equipment {
+ padding: .04em .17em .08em; background: #efd8d1; color: var(--ink);
+ font-weight: 700;
+ -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
