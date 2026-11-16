@@ -34,17 +34,17 @@
   box-shadow: 0 1px 5px rgb(40 55 70 / .06);
 }
 .page-shell #systems [data-system-artwork="arm200-coffee"] .systems-preview-inset {
-  bottom: 7%;
-  width: 34%;
+  bottom: 1%;
+  width: 48%;
   aspect-ratio: 1.9;
 }
 .page-shell #systems [data-system-artwork="visual-pick-place"] .systems-preview-inset {
-  width: 40%;
+  width: 44%;
   bottom: 1.5%;
-  aspect-ratio: 1.5;
+  aspect-ratio: 1.6;
 }
 .page-shell #systems [data-system-artwork="camera-traffic"] .systems-preview-inset {
-  width: 27%;
+  width: 52%;
   bottom: 1.8%;
   aspect-ratio: 2.2;
 }
@@ -100,7 +100,7 @@
 
 /* Official course interface inset; kept distinct from personal experiment results. */
 .page-shell #systems .systems-course-inset {
- position:absolute; right:0; bottom:2%; width:34%; height:31%;
+ position:absolute; right:0; bottom:2%; width:50%; height:40%;
  overflow:hidden; border:1px solid #dbe3e9; border-radius:5px;
  background:#fff; box-shadow:0 1px 5px rgb(40 55 70 / .06);
 }
