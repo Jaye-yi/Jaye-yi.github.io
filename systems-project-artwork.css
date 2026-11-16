@@ -1,0 +1,88 @@
+/* Seven homepage Systems & Engineering thumbnails; all other sections retain their styling. */
+.page-shell #systems .card-visual[data-system-artwork] {
+  padding: 7px;
+  border: 1px solid #e6e4e2;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(40 34 30 / .025);
+  aspect-ratio: 1.62;
+}
+.page-shell #systems .systems-overview {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1000 / 620;
+}
+.page-shell #systems .systems-overview > .systems-diagram {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: none;
+}
+.page-shell #systems .systems-preview-inset {
+  position: absolute;
+  right: 0;
+  bottom: 3.5%;
+  width: 30%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid #dbe3e9;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 1px 5px rgb(40 55 70 / .06);
+}
+.page-shell #systems [data-system-artwork="arm200-coffee"] .systems-preview-inset {
+  bottom: 7%;
+  width: 34%;
+  aspect-ratio: 1.9;
+}
+.page-shell #systems [data-system-artwork="visual-pick-place"] .systems-preview-inset {
+  width: 29%;
+  bottom: 1.5%;
+  aspect-ratio: 1.8;
+}
+.page-shell #systems [data-system-artwork="camera-traffic"] .systems-preview-inset {
+  width: 27%;
+  bottom: 1.8%;
+  aspect-ratio: 2.2;
+}
+.page-shell #systems .systems-preview-inset .motion-preview {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.page-shell #systems .systems-preview-inset .motion-poster,
+.page-shell #systems .systems-preview-inset .motion-overlay,
+.page-shell #systems .systems-preview-inset .motion-illustration {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+.page-shell #systems .systems-preview-inset .motion-badge {
+  right: 2px;
+  bottom: 2px;
+  padding: 2px 3px;
+  border-radius: 2px;
+  font-size: 6px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.page-shell #systems .systems-preview-inset .motion-badge::before {
+  margin-right: 2px;
+  font-size: 6px;
+}
+.page-shell #systems .course-grade {
+  display: inline-block;
+  margin: 4px 0 0 0;
+  padding: 2px 6px;
+  border: 1px solid #e4d8af;
+  border-radius: 4px;
+  background: #fff7d5;
+  color: #7b5c19;
+  font-weight: 700;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
