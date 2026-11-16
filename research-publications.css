@@ -59,6 +59,18 @@
 .page-shell #research > .publication .research-visual .motion-video {
   aspect-ratio: 4 / 3;
 }
+.page-shell #research > .publication [data-method-preview="cambridge"] .motion-video {
+  aspect-ratio: 16 / 9;
+}
+.page-shell #cambridge-workshop {
+  scroll-margin-top: 110px;
+}
+.page-shell #research > .publication [data-method-preview="cambridge"] .archive-speed-note {
+  left: 6px;
+  bottom: 6px;
+  padding: 4px 6px;
+  font-size: 9px;
+}
 
 .page-shell #research > .publication .motion-badge {
   right: 6px;
