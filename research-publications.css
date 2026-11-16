@@ -96,6 +96,42 @@
 }
 
 /* A subtle photographic feather; technical diagrams remain unmasked. */
+.page-shell #research > .publication [data-method-preview="multi-agent"] .multi-agent-overview {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1120 / 760;
+}
+.page-shell #research > .publication [data-method-preview="multi-agent"] .multi-agent-diagram {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.page-shell #research > .publication [data-method-preview="multi-agent"] .motion-preview {
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: 35.5%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid #e0e5e9;
+  border-radius: 5px;
+  background: #f7f9fb;
+  box-shadow: 0 1px 5px rgb(40 55 70 / .06);
+}
+.page-shell #research > .publication [data-method-preview="multi-agent"] .motion-badge {
+  right: 2px;
+  bottom: 2px;
+  padding: 2px 3px;
+  font-size: 6px;
+  white-space: nowrap;
+}
+.page-shell #research > .publication [data-method-preview="multi-agent"] .motion-badge::before {
+  margin-right: 2px;
+  font-size: 6px;
+}
+
 .page-shell #research > .publication [data-research-artwork="photo"] .motion-poster,
 .page-shell #research > .publication [data-research-artwork="photo"] .motion-overlay {
   -webkit-mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
