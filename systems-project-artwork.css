@@ -39,9 +39,9 @@
   aspect-ratio: 1.9;
 }
 .page-shell #systems [data-system-artwork="visual-pick-place"] .systems-preview-inset {
-  width: 29%;
+  width: 40%;
   bottom: 1.5%;
-  aspect-ratio: 1.8;
+  aspect-ratio: 1.5;
 }
 .page-shell #systems [data-system-artwork="camera-traffic"] .systems-preview-inset {
   width: 27%;
