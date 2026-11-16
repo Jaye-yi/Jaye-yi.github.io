@@ -14,7 +14,11 @@
   width: 100%;
   min-width: 0;
   align-self: center;
-  background: transparent;
+  padding: 8px;
+  border: 1px solid #e9e7e5;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(40 34 30 / .025);
 }
 
 /* Diagrams and panoramic demonstration strips retain their full composition. */
@@ -61,6 +65,53 @@
   bottom: 6px;
   padding: 4px 6px;
   font-size: 9px;
+}
+
+/* Source architecture at rest, existing conceptual animation on hover/focus. */
+.page-shell #research > .publication [data-method-preview="pi-vla"] .motion-preview {
+  aspect-ratio: 3099 / 1790;
+}
+.page-shell #research > .publication [data-method-preview="pi-vla"] .publication-method-poster {
+  transition: opacity 180ms ease;
+}
+.page-shell #research > .publication [data-method-preview="pi-vla"] .motion-illustration {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+.page-shell #research > .publication [data-method-preview="pi-vla"] .is-active .publication-method-poster {
+  opacity: 0;
+}
+.page-shell #research > .publication [data-method-preview="pi-vla"] .is-active .motion-illustration {
+  opacity: 1;
+}
+
+/* A subtle photographic feather; technical diagrams remain unmasked. */
+.page-shell #research > .publication [data-research-artwork="photo"] .motion-poster,
+.page-shell #research > .publication [data-research-artwork="photo"] .motion-overlay {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent), linear-gradient(to bottom, transparent, #000 4%, #000 96%, transparent);
+  mask-composite: intersect;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-shell #research > .publication [data-method-preview="pi-vla"] .publication-method-poster,
+  .page-shell #research > .publication [data-method-preview="pi-vla"] .motion-illustration {
+    transition: none;
+  }
+}
+
+/* Keep the original SLAM and scientific-imaging comparisons uncropped. */
+.page-shell #research .research-expansion .card-visual {
+  padding: 6px;
+  border: 1px solid #e9e7e5;
+  border-radius: 10px;
+  background: #fff;
+}
+.page-shell #research .research-expansion .card-visual > img {
+  object-fit: contain;
 }
 
 .page-shell #research > .publication .pub-copy {
