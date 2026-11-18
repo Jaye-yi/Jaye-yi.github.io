@@ -277,3 +277,25 @@
 .page-shell #research .research-expansion .research-authors {
  font-size: .69rem; line-height: 1.6;
 }
+
+/* A quiet, static Home Lab entry beneath the homepage profile. */
+.intro-grid .profile-card .home-lab-entry {
+ display: block; width: min(100%, 138px); margin: 19px auto 0;
+ padding: 0; color: var(--muted); text-decoration: none;
+ font: 500 .68rem / 1.35 var(--sans);
+}
+.intro-grid .profile-card .home-lab-entry img {
+ display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+ object-fit: cover; border-radius: 5px; border: 1px solid var(--line);
+}
+.intro-grid .profile-card .home-lab-entry > span { display:block; margin-top:5px; }
+.intro-grid .profile-card .home-lab-entry:hover > span { color:var(--rose-dark); }
+.intro-grid .profile-card .home-lab-entry:focus-visible { outline:2px solid var(--rose-dark); outline-offset:5px; }
+@media (max-width: 560px) {
+ .intro-grid .profile-card .home-lab-entry {
+  grid-column:2; display:inline-flex; align-items:center; gap:7px;
+  width:max-content; max-width:100%; margin:9px 0 0; font-size:.65rem;
+ }
+ .intro-grid .profile-card .home-lab-entry img { width:44px; flex:none; }
+ .intro-grid .profile-card .home-lab-entry > span { margin-top:0; }
+}

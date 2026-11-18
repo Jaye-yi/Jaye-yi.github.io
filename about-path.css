@@ -82,3 +82,5 @@
  font-weight: 700;
  -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
+
+#home-lab { scroll-margin-top: 110px; }
