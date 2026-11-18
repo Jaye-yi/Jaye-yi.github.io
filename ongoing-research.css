@@ -1,0 +1,36 @@
+/* Compact, intentionally general research directions. */
+.page-shell #ongoing-research {
+  margin-top: 27px;
+  scroll-margin-top: 90px;
+}
+.page-shell #ongoing-research > h3 {
+  margin-bottom: 7px;
+}
+.page-shell #ongoing-research .ongoing-research-intro {
+  margin: 4px 0 12px;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+.page-shell #ongoing-research .ongoing-research-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .88rem;
+  line-height: 1.4;
+}
+.page-shell #ongoing-research .ongoing-research-list li {
+  margin: 0;
+  padding: 0;
+}
+.page-shell #ongoing-research .ongoing-research-list strong {
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .page-shell #ongoing-research .ongoing-research-list {
+    gap: 8px;
+  }
+}
