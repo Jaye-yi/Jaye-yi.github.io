@@ -1,0 +1,25 @@
+/* Notes-page layout: keep course resources below the complete introduction. */
+.notes-knowledge > .notes-course-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 32px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.notes-knowledge > .notes-course-links a {
+  min-width: 0;
+  max-width: 100%;
+  justify-self: start;
+  align-self: start;
+  line-height: 1.45;
+  padding: 4px 0;
+}
+@media (max-width: 760px) {
+  .notes-knowledge > .notes-course-links {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 14px;
+  }
+}
